@@ -1,0 +1,460 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("fonts/open_sans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("fonts/open_sans/OpenSans-Regular.ttf");
+}
+
+/*PRIMEIRO CARROSSEL*/
+
+@media screen and (min-width: 800px) {
+
+
+}
+
+.arrow_path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: arrow_path 6s linear forwards infinite;
+    stroke: #ffeeba;
+    stroke-width: 30;
+}
+
+@keyframes arrow_path {
+    40% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.caption {
+    position: absolute;
+    text-align:center;
+    z-index: 1;
+    width:100%;
+    height:100%;
+}
+
+.caption svg {
+    max-width: 3vw;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+h1 {
+    font-family: OpenSans-Bold;
+    color: #3c523a;
+    font-size: 4vw;
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+
+}
+
+h2 {
+    font-family: OpenSans-Bold;
+    font-size: medium;
+    margin: 2vh;
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+}
+
+h3 {
+    font-family: OpenSans-Bold;
+    color: #FFF;
+    font-size: 2vw;
+    margin: 2vh;
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+
+}
+
+.font_strong {
+    font-family: OpenSans-Bold;
+    margin: 2vh;
+    font-size: small;
+}
+
+p {
+    font-family: OpenSans-Regular;
+    margin: 2vh;
+    font-size: small;
+}
+
+.relative-div {
+    position: relative;
+}
+
+.slick-active{
+    background: #3c523a;
+    border-radius: 15px;
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+}
+
+.single-item .slick-slide img {
+    width: 100%;
+    height: 100vh;
+}
+
+.slick-slide {
+    background-color: #434343;
+}
+
+.square {
+    width: 100%;
+    height: 8vh;
+    background: #000;
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+    margin-top: 92vh;
+}
+
+/*SEGUNDO CARROSEL*/
+
+.carousel .slick-slide img {
+    width: 100%;
+    border: 4px solid #707070;
+}
+
+.carousel .slick-slide {
+    margin: 0 5px;
+    padding: 4px;
+    margin-top: 3vw;
+}
+
+.carousel-2 {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    position: relative;
+}
+
+.box1 {
+    background-color: #434343;
+    color: #FFF;
+    padding-bottom: 4vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#section1 {
+}
+
+.slick-arrow {
+    animation-duration: 4s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*IMAGEM COM BORDA CIRCULAR CINZA*/
+
+.clip-circle {
+    clip-path: circle(10vw at center);
+    position: relative;
+}
+
+.clip-border {
+    clip-path: circle(11vw at center);
+    background-color: #343434;
+}
+
+.column33 {
+    float: left;
+    max-width: 33.33%;
+    margin: auto;
+}
+
+.column33 img {
+    width: 100% !important;
+    /*height: 100%;*/
+}
+
+.column66 {
+    float: left;
+    max-width: 66.66%;
+}
+
+.box2 {
+    background-color: #777777;
+    color: #FFF;
+}
+
+.img_border {
+    border: 4px solid #707070;
+    margin-bottom: 2vh;
+}
+
+.row {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 3vw 5vw;
+}
+
+/*SANFONA*/
+
+.accordion {
+    background-color: #777777;
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #FFF;
+    color: #777777;
+    font-family: OpenSans-Bold;
+    content: '\2193';
+}
+
+.accordion:after {
+    content: '\2193';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.border_bottom {
+    border-radius: 0 0 5px 5px;
+}
+
+.border_bottom.active {
+    border-radius: 0px;
+}
+
+.border_top {
+    border-radius: 5px 5px 0 0;
+}
+
+button.active:after {
+    content: "\2191";
+    color: #777777;
+}
+
+button.accordion {
+    font-family: OpenSans-Bold;
+}
+
+.container-accordion {
+    position: relative;
+    /*transform: translate(-50%);*/
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.box3 {
+    background-color: #BFBFBF;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    color: #777777 !important;
+}
+
+.new_row {
+    display: flex;
+    margin: auto;
+}
+
+/*FORMULARIO*/
+
+.box4 {
+    position: relative;
+}
+
+.form_line {
+    width: 80%;
+    margin: auto;
+    margin-top: 2vh;
+    height: auto;
+    padding: 0vh 5vw;
+    display: flex;
+}
+
+.form_button {
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 2vh 3vw;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+}
+
+form_row{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    margin-left: 10%;
+}
+
+input[type=text], textarea {
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #BFBFBF !important;
+}
+
+textarea{
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    background-color: #BFBFBF !important;
+}
+
+label {
+    display: flex;
+    font-family: OpenSans-Bold;
+    font-size: 12px;
+}
+
+
+.label_email {
+    margin-left: 11vw;
+    margin-top: 6vh;
+    float: left;
+    position: absolute;
+}
+
+.label_message{
+    margin-left: 11vw;
+    margin-top: 5.8vh;
+}
+
+.label_name{
+    margin-left: 11vw;
+    margin-top: 4.8vh;
+    padding-top: 1vh;
+}
+.label_phone {
+    margin-left: 3.5vw;
+    margin-top: 6vh;
+    float: left;
+}
+
+.column4 {
+    width: 4.5vw !important;
+}
+
+.column5 {
+    width: 5vw !important;
+}
+
+.input_name{
+    padding-left: 10vh !important;
+}
+
+.input_email{
+    text-indent: 4.5vw;
+}
+
+.input_message{
+    height: 20vh;
+    padding-left: 15vh !important;
+    padding-top: -5vh !important;
+}
+
+.input_phone{
+    padding-left: 2vh !important;
+    text-indent:5vw;
+    margin-left: 1vw;
+}
+
+.input_phone::placeholder{
+    text-indent:5vw;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #BFBFBF inset;
+}
+.tooltip {
+    position: relative;
+    display: inline-flex;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    /*left: 50%;*/
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.triangle {
+    padding: 2vh 0vw;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #777777 0%, #777777 50%, #434343 50%, #434343 100%);
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #2a2b2b;
+    height: 5vh;
+    padding: 1.5vw;
+}
+
+.font_footer {
+    margin: auto;
+    text-align: center;
+    font-size: 3vh;
+}
