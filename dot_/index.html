@@ -39,7 +39,7 @@
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -65,12 +65,14 @@
 </script>
 <body>
 <div class="relative-div">
-    <div class="square"></div>
-    <div class="caption">
+    <div class="caption_title">
         <h1>LOREM IPSUM</h1>
         <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-        <a href="#section1">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    </div>
+    <div class="caption_svg">
+        <a href="#section1" id="svg_arrow">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
                  x="0px" y="0px"
                  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
@@ -103,7 +105,7 @@
     <div class="carousel-2">
         <div class="carousel" id="section1">
             <div>
-                <img src="./imgs/forest_640.jpg" class="img-responsive">
+                <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
                 <h3>LOREM IPSUM</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum laoreet tempor. Morbi
                     consectetur at nisi eget gravida. Curabitur nibh tellus, fermentum rutrum vulputate id, tristique in
@@ -170,14 +172,14 @@
 </div>
 <div class="box2">
     <div class="row">
-        <div class="column33">
+        <div class="column_left">
             <div class="clip-border">
                 <div class="clip-circle">
-                    <img src="./imgs/forest_360.jpg">
+                    <img src="imgs/forest_square.png" class="img-responsive">
                 </div>
             </div>
         </div>
-        <div class="column66">
+        <div class="column_right">
             <h3>LOREM IPSUM</h3>
             <p>Pellentesque sit amet libero nulla. Proin pellentesque leo sed ante efficitur efficitur. Curabitur vel
                 semper purus, et ullamcorper tellus. Vivamus egestas, nibh vel elementum vehicula, risus lorem tempus
@@ -255,7 +257,7 @@
     </div>
 </div>
 <div class="relative-div">
-    <div class="caption">
+    <div class="caption_form">
         <label class="label_name" for="name">*Nome: </label>
         <div class="form_row">
             <div class="column4">
@@ -302,7 +304,7 @@
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
-            debugger;
+            // debugger;
             // hideAll();
             /* Toggle between adding and removing the "active" class,
             to highlight the button that controls the panel */

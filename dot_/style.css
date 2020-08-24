@@ -10,11 +10,6 @@
 
 /*PRIMEIRO CARROSSEL*/
 
-@media screen and (min-width: 800px) {
-
-
-}
-
 .arrow_path {
     stroke-dasharray: 2000;
     stroke-dashoffset: 2000;
@@ -36,20 +31,24 @@ body {
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
+    background-color: #434343;
 }
 
-.caption {
+.caption_title {
     position: absolute;
-    text-align:center;
+    text-align: center;
     z-index: 1;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
 
-.caption svg {
+.caption_svg {
+    position: absolute;
+    left: 49%;
+    z-index: 1;
+    width: 100%;
     max-width: 3vw;
-    margin: auto;
-    margin-top: 15vh;
+    margin-top: 30vh;
 }
 
 h1 {
@@ -63,7 +62,7 @@ h1 {
 
 h2 {
     font-family: OpenSans-Bold;
-    font-size: medium;
+    font-size: 1.5vw;
     margin: 2vh;
     margin-block-start: 0.3em;
     margin-block-end: 0em;
@@ -95,10 +94,18 @@ p {
     position: relative;
 }
 
-.slick-active{
+#section1 {
+}
+
+.slick-active {
     background: #3c523a;
     border-radius: 15px;
 }
+
+.slick-dots{
+    background: rgba(0, 0, 0, 0.6);
+}
+
 
 .slick-dots li button:before {
     font-size: 20px;
@@ -113,17 +120,13 @@ p {
     background-color: #434343;
 }
 
-.square {
-    width: 100%;
-    height: 8vh;
-    background: #000;
-    opacity: 0.5;
-    z-index: 1;
-    position: absolute;
-    margin-top: 92vh;
-}
-
 /*SEGUNDO CARROSEL*/
+
+.box1 {
+    background-color: #434343;
+    color: #FFF;
+    padding-bottom: 4vh;
+}
 
 .carousel .slick-slide img {
     width: 100%;
@@ -143,17 +146,8 @@ p {
     position: relative;
 }
 
-.box1 {
-    background-color: #434343;
-    color: #FFF;
-    padding-bottom: 4vh;
-}
-
 html {
     scroll-behavior: smooth;
-}
-
-#section1 {
 }
 
 .slick-arrow {
@@ -162,6 +156,7 @@ html {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 @keyframes blink {
     0% {
         opacity: 1;
@@ -174,7 +169,13 @@ html {
     }
 }
 
+
 /*IMAGEM COM BORDA CIRCULAR CINZA*/
+
+.box2 {
+    background-color: #777777;
+    color: #FFF;
+}
 
 .clip-circle {
     clip-path: circle(10vw at center);
@@ -186,25 +187,20 @@ html {
     background-color: #343434;
 }
 
-.column33 {
+.column_left {
     float: left;
-    max-width: 33.33%;
+    width: 33.33%;
     margin: auto;
 }
 
-.column33 img {
+.column_left img {
     width: 100% !important;
-    /*height: 100%;*/
+    height: auto;
 }
 
-.column66 {
+.column_right {
     float: left;
-    max-width: 66.66%;
-}
-
-.box2 {
-    background-color: #777777;
-    color: #FFF;
+    width: 66.66%;
 }
 
 .img_border {
@@ -262,6 +258,10 @@ html {
     border-radius: 5px 5px 0 0;
 }
 
+.box3 {
+    background-color: #BFBFBF;
+}
+
 button.active:after {
     content: "\2191";
     color: #777777;
@@ -273,14 +273,9 @@ button.accordion {
 
 .container-accordion {
     position: relative;
-    /*transform: translate(-50%);*/
     width: 100%;
     margin: auto;
     border-radius: 5px;
-}
-
-.box3 {
-    background-color: #BFBFBF;
 }
 
 .panel {
@@ -302,13 +297,20 @@ button.accordion {
     position: relative;
 }
 
-.form_line {
-    width: 80%;
-    margin: auto;
-    margin-top: 2vh;
-    height: auto;
-    padding: 0vh 5vw;
-    display: flex;
+.column4 {
+    width: 4.5vw !important;
+}
+
+.column5 {
+    width: 5vw !important;
+}
+
+.caption_form {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .form_button {
@@ -322,11 +324,51 @@ button.accordion {
     font-family: OpenSans-Bold;
 }
 
-form_row{
+.form_line {
+    width: 80%;
+    margin: auto;
+    margin-top: 2vh;
+    height: auto;
+    padding: 0vh 5vw;
+    display: flex;
+}
+
+form_row {
     margin: auto;
     width: 80%;
     display: flex;
     margin-left: 10%;
+}
+
+.input_name {
+    padding-left: 10vh !important;
+}
+
+.input_email {
+    text-indent: 4.5vw;
+}
+
+.input_message {
+    height: 20vh;
+    padding-left: 15vh !important;
+    padding-top: -5vh !important;
+}
+
+.input_phone {
+    padding-left: 2vh !important;
+    text-indent: 5vw;
+    margin-left: 1vw;
+}
+
+.input_phone::placeholder {
+    text-indent: 5vw;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #BFBFBF inset;
 }
 
 input[type=text], textarea {
@@ -335,12 +377,6 @@ input[type=text], textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #BFBFBF !important;
-}
-
-textarea{
-    font-family: OpenSans-Regular;
-    font-size: 13px;
     background-color: #BFBFBF !important;
 }
 
@@ -358,64 +394,32 @@ label {
     position: absolute;
 }
 
-.label_message{
+.label_message {
     margin-left: 11vw;
     margin-top: 5.8vh;
 }
 
-.label_name{
+.label_name {
     margin-left: 11vw;
     margin-top: 4.8vh;
     padding-top: 1vh;
 }
+
 .label_phone {
     margin-left: 3.5vw;
     margin-top: 6vh;
     float: left;
 }
 
-.column4 {
-    width: 4.5vw !important;
+textarea {
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+    background-color: #BFBFBF !important;
 }
 
-.column5 {
-    width: 5vw !important;
-}
-
-.input_name{
-    padding-left: 10vh !important;
-}
-
-.input_email{
-    text-indent: 4.5vw;
-}
-
-.input_message{
-    height: 20vh;
-    padding-left: 15vh !important;
-    padding-top: -5vh !important;
-}
-
-.input_phone{
-    padding-left: 2vh !important;
-    text-indent:5vw;
-    margin-left: 1vw;
-}
-
-.input_phone::placeholder{
-    text-indent:5vw;
-}
-
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-    -webkit-text-fill-color: #000;
-    -webkit-box-shadow: 0 0 0px 1000px #BFBFBF inset;
-}
 .tooltip {
     position: relative;
     display: inline-flex;
-    /*border-bottom: 1px dotted black;*/
 }
 
 .tooltip .tooltiptext {
@@ -431,13 +435,13 @@ select:-webkit-autofill {
     position: absolute;
     z-index: 1;
     top: 100%;
-    /*left: 50%;*/
     margin-left: -60px;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
 .triangle {
     padding: 2vh 0vw;
     width: 100%;
@@ -457,4 +461,101 @@ select:-webkit-autofill {
     margin: auto;
     text-align: center;
     font-size: 3vh;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+        color: #FFF;
+    }
+
+    h2{
+        font-size: 2.5vw;
+        color: #FFF;
+        font-family: OpenSans-Regular;
+    }
+
+    h3  {
+        font-size: 4vw;
+    }
+
+    .caption_title {
+        position: relative;
+        background-color: #434343;
+        max-width: 70%;
+        margin: 5vh auto;
+    }
+    .caption_svg {
+        position: absolute;
+        left: 45%;
+        z-index: 1;
+        width: 100%;
+        max-width: 10vw;
+        margin-top: 15vh;
+    }
+
+    /*IMAGEM COM CIRCULO*/
+
+    .row{
+        display: grid;
+        margin: auto;
+        width: 95%;
+        height: auto;
+        padding-top: 2vh;
+    }
+
+    .clip-circle {
+        clip-path: circle(43vw at center);
+        position: relative;
+    }
+
+    .clip-border {
+        clip-path: circle(45vw at center);
+        background-color: #343434;
+    }
+
+    .column_left {
+        width: 80%;
+    }
+
+    .column_left img {
+        width: 100% !important;
+    }
+
+    .column_right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .single-item .slick-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*SANFONA*/
+
+    .new_row{
+        display: grid;
+    }
+
+    .carousel-2 {
+        margin-bottom: 10vh;
+    }
+
+    .slick-next, .slick-prev{
+        position: absolute;
+        right: 20%;
+        z-index: 1;
+        top: 103%;
+        height: 15%;
+        width: 15%;
+        margin: 2vh auto;
+    }
+
+    .carousel .slick-slide img {
+        width: 96%;
+        border: 2vw solid #707070;
+    }
+
 }
