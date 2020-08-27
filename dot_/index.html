@@ -12,6 +12,7 @@
         <link href="libs/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet"
               type="text/css">
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="responsive.css"/>
         <title></title>
     </head>
 </div>
@@ -175,7 +176,7 @@
         <div class="column_left">
             <div class="clip-border">
                 <div class="clip-circle">
-                    <img src="imgs/forest_square.png" class="img-responsive">
+                    <img src="imgs/forest_square.png" class="img-responsive img_left">
                 </div>
             </div>
         </div>
@@ -203,10 +204,10 @@
             <button class="accordion border_top">Lorem ipsum</button>
             <div class="panel">
                 <div class="new_row">
-                    <div class="column33">
+                    <div class="column_left">
                         <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
                     </div>
-                    <div class="column66">
+                    <div class="column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -216,10 +217,10 @@
             <button class="accordion">Lorem ipsum</button>
             <div class="panel">
                 <div class="new_row">
-                    <div class="column33">
+                    <div class="column_left">
                         <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
                     </div>
-                    <div class="column66">
+                    <div class="column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -230,10 +231,10 @@
             <button class="accordion">Lorem ipsum</button>
             <div class="panel">
                 <div class="new_row">
-                    <div class="column33">
+                    <div class="column_left">
                         <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
                     </div>
-                    <div class="column66">
+                    <div class="column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -243,10 +244,10 @@
             <button class="accordion border_bottom">Lorem ipsum</button>
             <div class="panel border_bottom">
                 <div class="new_row">
-                    <div class="column33">
+                    <div class="column_left">
                         <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
                     </div>
-                    <div class="column66">
+                    <div class="column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -256,39 +257,31 @@
         </div>
     </div>
 </div>
-<div class="relative-div">
-    <div class="caption_form">
-        <label class="label_name" for="name">*Nome: </label>
-        <div class="form_row">
-            <div class="column4">
-                <label class="label_email" for="email">*E-mail: </label>
-            </div>
-            <div class="column5 tooltip">
-                <label class="label_phone" for="phone">*Telefone:
-                    <span class="tooltiptext">O telefone deve ter DDD: (  )_____-____</span></label>
-            </div>
-        </div>
-        <label class="label_message" for="message">*Mensagem: </label>
-    </div>
-</div>
-</div>
 <div class="triangle">
     <div class="box4">
-        <form name="RegForm">
+        <form name="RegForm" id="formulario-1">
             <div class="form_line">
-                <input id="name" class="input_name" type="text" placeholder="Seu nome" required>
+                <label class="caption_form" for="name">*Nome: </label>
+                <input id="name" type="text" placeholder="Seu nome" required>
+            </div>
+            <div class="form_container">
+                <div class="form_half">
+                    <label for="email" class="caption_form label_email">*Email: </label>
+                    <input id="email" type="email" placeholder="Informe seu e-mail"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+                <div class="form_half tooltip">
+                    <label class="caption_form label_phone" for="phone">*Telefone:
+                        <span class="tooltiptext">O telefone deve ter DDD: (  )_____-____</span></label>
+                    <input id="phone" type="text" placeholder="(  )_____-____"
+                           pattern="(+[0-9]+){2}[0-9]{5}+-[0-9]{4}" required>
+                </div>
             </div>
             <div class="form_line">
-                <input id="email" class="input_email" type="text" placeholder="Informe seu e-mail"
-                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                <input id="phone" class="input_phone" type="text"
-                       placeholder="(  )_____-____" pattern="(+[0-9]+){2}[0-9]{5}+-[0-9]{4}"
-                       required>
+                <label class="caption_form label_message" for="message">*Mensagem: </label>
+                <textarea id="message" type="message" placeholder="Escreva aqui" required></textarea>
             </div>
-            <div class="form_line">
-                <textarea id="message" class="input_message" type="text" placeholder="Escreva aqui" required></textarea>
-            </div>
-            <button class="form_button" onclick="message_sent()">Enviar</button>
+            <button class="form_button" onclick="">Enviar</button>
         </form>
     </div>
 </div>
@@ -304,8 +297,7 @@
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
-            // debugger;
-            // hideAll();
+            hideAll();
             /* Toggle between adding and removing the "active" class,
             to highlight the button that controls the panel */
             this.classList.toggle("active");
@@ -322,6 +314,7 @@
 
     function hideAll() {
         for (i = 0; i < acc.length; i++) {
+            var panel = acc[i].nextElementSibling;
             acc[i].classList.toggle("active", false);
             if (panel.style.display === "block") {
                 panel.style.display = "none";
@@ -329,14 +322,22 @@
         }
     }
 
-    function message_sent() {
-        var name = document.forms["RegForm"]["name"];
-        var email = document.forms["RegForm"]["email"];
-        var phone = document.forms["RegForm"]["phone"];
-        var message = document.forms["RegForm"]["message"];
-        if (name.value == "" || email.value == "" || phone.value == "" || message.value == "") {
-            return false;
-        }
-        window.alert("Mensagem enviada.");
-    }
+    // function message_sent() {
+    //     var name = document.forms["RegForm"]["name"];
+    //     var email = document.forms["RegForm"]["email"];
+    //     var phone = document.forms["RegForm"]["phone"];
+    //     var message = document.forms["RegForm"]["message"];
+    //     if (name.value == "" || email.value == "" || phone.value == "" || message.value == "") {
+    //         return false;
+    //     }
+    //     $('#formulario-1').on('submit', function(){
+    //         $(this).find('input[required=true]').each(function(){
+    //             if(!$(this).val()){
+    //                 alert('O campo ' + $(this).attr('id') + ' é obrigatório!');
+    //                 return false;
+    //             }
+    //         });
+    //     });
+    //     window.alert("Mensagem enviada.");
+    // }
 </script>
