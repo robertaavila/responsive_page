@@ -337,7 +337,6 @@ button.accordion {
 .form_container {
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
     margin: auto;
 }
 
@@ -349,13 +348,8 @@ button.accordion {
     display: flex;
 }
 
-.form_flex {
-    display: inline-flex;
-}
-
-.form_row{
-    width: 80%;
-    margin-left: 10%;
+.form_half {
+    justify-content: space-between;
 }
 
 #name {
@@ -366,7 +360,7 @@ button.accordion {
     text-indent: 4.5vw;
     width: 93%;
     margin-bottom: 2vh;
-    /*padding-right: 2%;*/
+    justify-content: space-between;
 }
 
 #message {
@@ -375,10 +369,11 @@ button.accordion {
 }
 
 #phone {
-    text-indent: 5vw;
+    text-indent: 6vw;
     width: 93%;
     margin-bottom: 2vh;
-    /*padding-left: 4.5%;*/
+    justify-content: space-between;
+    padding-left: 4%;
 }
 
 .input_phone::placeholder {
@@ -410,11 +405,7 @@ label {
     margin-top: 0.3vh;
 }
 
-.label_email {
-    position: absolute;
-}
-
-.label_phone {
+.label_email .label_phone {
     position: absolute;
 }
 

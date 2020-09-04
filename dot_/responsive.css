@@ -98,6 +98,13 @@
     /*FORMULARIO*/
     .form_container {
         flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    .form_half{
+        width: 80%;
+        display: flex;
+        margin: auto;
     }
 
     /*FOOTER*/
@@ -109,10 +116,25 @@
         font-size: 4vh;
         padding-top: 1.5vh;;
     }
+
+
+    #email{
+        width: 100%;
+        text-indent: 7vw;
+    }
+
+    #phone{
+        width: 100%;
+        text-indent: 8vw;
+    }
 }
 
 @media (min-width: 769px) {
     .form_half {
         flex: 36vw;
+        display: flex;
+        width: 80%;
+        margin: auto;
     }
+
 }

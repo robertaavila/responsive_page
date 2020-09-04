@@ -259,7 +259,7 @@
 </div>
 <div class="triangle">
     <div class="box4">
-        <form name="RegForm" id="formulario-1">
+        <form name="form">
             <div class="form_line">
                 <label class="caption_form" for="name">*Nome: </label>
                 <input id="name" type="text" placeholder="Seu nome" required>
@@ -270,6 +270,7 @@
                     <input id="email" type="email" placeholder="Informe seu e-mail"
                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
+                <div style="width: 3%"></div>
                 <div class="form_half tooltip">
                     <label class="caption_form label_phone" for="phone">*Telefone:
                         <span class="tooltiptext">O telefone deve ter DDD: (  )_____-____</span></label>
@@ -322,22 +323,4 @@
         }
     }
 
-    // function message_sent() {
-    //     var name = document.forms["RegForm"]["name"];
-    //     var email = document.forms["RegForm"]["email"];
-    //     var phone = document.forms["RegForm"]["phone"];
-    //     var message = document.forms["RegForm"]["message"];
-    //     if (name.value == "" || email.value == "" || phone.value == "" || message.value == "") {
-    //         return false;
-    //     }
-    //     $('#formulario-1').on('submit', function(){
-    //         $(this).find('input[required=true]').each(function(){
-    //             if(!$(this).val()){
-    //                 alert('O campo ' + $(this).attr('id') + ' é obrigatório!');
-    //                 return false;
-    //             }
-    //         });
-    //     });
-    //     window.alert("Mensagem enviada.");
-    // }
 </script>
