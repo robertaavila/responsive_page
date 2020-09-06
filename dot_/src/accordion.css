@@ -1,0 +1,56 @@
+
+.accordion_margin {
+    width: 80%;
+    margin: auto;
+    padding: 6vh 0;
+    display: flex;
+}
+
+.accordion_background{
+    background-color: var(--fairGray);
+
+}
+
+.accordion_margin .MuiPaper-root {
+    background-color: var(--mediumGray);
+    color: white;
+    font-weight: bold;
+}
+
+.accordion_margin .MuiAccordion-root .Mui-expanded {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.MuiAccordion-root.Mui-expanded {
+    margin: 0 !important;
+}
+
+.accordion_margin .MuiCollapse-wrapperInner{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+button.active:after {
+    content: "\2191";
+
+}
+
+button.accordion {
+    font-family: OpenSans-Bold;
+}
+
+.container-accordion {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    color: var(--mediumGray);
+}

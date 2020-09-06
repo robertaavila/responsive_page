@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.box1 {
+  background-color: var(--darkGray);
+  color: var(--white);
+  padding-bottom: 4vh;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-arrow {
+  animation-duration: 4s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.box2 {
+  background-color: var(--mediumGray);
+  color: var(--white);
+  margin: 0px;
+}
+
+.clip-circle {
+  clip-path: circle(10vw at center);
+  position: relative;
+}
+
+.clip-border {
+  clip-path: circle(11vw at center);
+  background-color: var(--footerGray);
+}
+
+.column_left {
+  width: 33.33%;
+  margin: auto;
+}
+
+.column_left img {
+  width: 100%;
+}
+
+.img_left {
+  width: 100%;
+  height: auto;
+}
+
+.column_right {
+  width: 66.66%;
+}
+
+.img_border {
+  border: 4px solid var(--mediumGray);
+  margin-bottom: 2vh;
+}
+
+.row {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 3vw 5vw;
+}
+
+.triangle {
+  padding: 2vh 0vw;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, var(--mediumGray) 0%, var(--mediumGray) 50%, var(--darkGray) 50%, var(--darkGray) 100%);
+}
+
+.footer {
+  background-color: var(--footerGray);
+  height: 5vh;
+  padding: 1.5vw;
+}
+
+.footer h3 {
+  margin: auto;
+  text-align: center;
+  font-size: 3vh;
+  color: white;
+}

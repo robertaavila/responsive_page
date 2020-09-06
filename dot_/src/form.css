@@ -1,0 +1,96 @@
+
+.box4 {
+    position: relative;
+}
+
+.caption_form {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+}
+
+.form_button {
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 2vh 3vw;
+    border-radius: 10px;
+    border: 1px solid var(--fairGray);
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+}
+
+.form_container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.form_line {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2vh;
+    height: auto;
+    display: flex;
+}
+
+.form_half {
+    justify-content: space-between;
+}
+
+#name {
+    padding-left: 10vh;
+}
+
+#email {
+    text-indent: 4.5vw;
+    width: 93%;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+}
+
+#message {
+    height: 20vh;
+    padding-left: 15vh;
+}
+
+#phone {
+    text-indent: 6vw;
+    width: 93%;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    padding-left: 4%;
+}
+
+.input_phone::placeholder {
+    text-indent: 5vw;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: var(--black);
+    -webkit-box-shadow: 0 0 0px 1000px var(--fairGray) inset;
+}
+
+input, textarea {
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--borderGray);
+    border-radius: 4px;
+    background-color: var(--fairGray);
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+}
+
+label {
+    display: flex;
+    font-size: 12px;
+    pointer-events: none;
+    margin-top: 0.3vh;
+}
+
+.label_email .label_phone {
+    position: absolute;
+}
