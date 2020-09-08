@@ -97,7 +97,7 @@ h3 {
 p {
     font-family: OpenSans-Regular;
     margin: 2vh;
-    font-size: small;
+    font-size: 1.2vw;
 }
 
 .relative-div {
@@ -205,10 +205,6 @@ html {
 }
 
 .column_left img {
-    width: 100%;
-}
-
-.img_left {
     width: 100%;
     height: auto;
 }

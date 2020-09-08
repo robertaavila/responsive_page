@@ -14,8 +14,13 @@ img {
     height: 100vh;
 }
 
-.slick-slide{
-    background-color: var(--darkGray);
+.slick-dots {
+    background: red;
+}
+
+
+.slick-dots li button:before {
+    font-size: 20px;
 }
 
 

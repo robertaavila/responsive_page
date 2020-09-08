@@ -1,5 +1,102 @@
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("fonts/open_sans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("fonts/open_sans/OpenSans-Regular.ttf");
+}
+
+:root {
+  --darkGray: #434343;
+  --mediumGray: #777777;
+  --fairGray: #BFBFBF;
+  --borderGray: #CCCCCC;
+  --footerGray: #2A2B2B;
+  --white: #FFFFFF;
+  --black: #000000;
+  --title: #3C523A;
+}
+
 .App {
   text-align: center;
+  font-family: OpenSans-Bold;
+}
+
+p {
+  font-family: OpenSans-Regular;
+  margin: 2vh;
+  font-size: 1.2vw;
+}
+
+h1 {
+  color: var(--title);
+  font-size: 4vw;
+  margin-block-start: 0.3em;
+  margin-block-end: 0em;
+
+}
+
+h2 {
+  font-size: 1.5vw;
+  margin: 2vh;
+  margin-block-start: 0.3em;
+  margin-block-end: 0em;
+}
+
+h3 {
+  color: var(--white);
+  font-size: 2vw;
+  margin: 2vh;
+  margin-block-start: 0.3em;
+  margin-block-end: 0em;
+
+}
+
+.relative-div {
+  position: relative;
+}
+
+#section1 {
+}
+
+.arrow_path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: arrow_path 6s linear forwards infinite;
+  stroke: var(--white);
+  stroke-width: 30;
+}
+
+@keyframes arrow_path {
+  40% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.absolute_div {
+  position: absolute;
+}
+
+.caption_title {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.caption_svg {
+  position: absolute;
+  left: 49%;
+  z-index: 1;
+  width: 100%;
+  max-width: 3vw;
+  margin-top: 30vh;
 }
 
 .box1 {
@@ -7,8 +104,6 @@
   color: var(--white);
   padding-bottom: 4vh;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -33,8 +128,6 @@ html {
   }
 }
 
-
-
 .box2 {
   background-color: var(--mediumGray);
   color: var(--white);
@@ -51,27 +144,9 @@ html {
   background-color: var(--footerGray);
 }
 
-.column_left {
-  width: 33.33%;
-  margin: auto;
-}
-
-.column_left img {
-  width: 100%;
-}
-
-.img_left {
-  width: 100%;
-  height: auto;
-}
-
-.column_right {
-  width: 66.66%;
-}
-
 .img_border {
   border: 4px solid var(--mediumGray);
-  margin-bottom: 2vh;
+  margin: 2vh;
 }
 
 .row {
@@ -80,6 +155,10 @@ html {
   width: 80%;
   height: auto;
   padding: 3vw 5vw;
+}
+
+.font_strong {
+  font-family: OpenSans-Bold;
 }
 
 .triangle {

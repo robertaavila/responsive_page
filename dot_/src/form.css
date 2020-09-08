@@ -26,6 +26,14 @@
     margin: auto;
 }
 
+.form_half {
+    width: 50%;
+}
+
+.form_space_between{
+    width: 3%;
+}
+
 .form_line {
     width: 80%;
     margin: auto;
@@ -34,9 +42,9 @@
     display: flex;
 }
 
-.form_half {
-    justify-content: space-between;
-}
+/*.form_half {*/
+/*    justify-content: space-between;*/
+/*}*/
 
 #name {
     padding-left: 10vh;
@@ -93,4 +101,28 @@ label {
 
 .label_email .label_phone {
     position: absolute;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-top: 2vh;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

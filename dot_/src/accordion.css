@@ -31,26 +31,26 @@
     color: var(--black);
 }
 
-button.active:after {
-    content: "\2191";
-
-}
-
-button.accordion {
+.accordion_margin .makeStyles-heading-2 {
     font-family: OpenSans-Bold;
 }
 
-.container-accordion {
-    position: relative;
-    width: 100%;
+.new_row {
+    display: flex;
     margin: auto;
-    border-radius: 5px;
 }
 
-.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-    color: var(--mediumGray);
+.column_left {
+    width: 33.33%;
+    margin: auto;
+}
+
+.column_left img {
+    width: 90%;
+    height: auto;
+}
+
+.column_right {
+    width: 66.66%;
+   margin-top: 10vh;
 }

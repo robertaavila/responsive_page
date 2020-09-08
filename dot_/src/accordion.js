@@ -6,6 +6,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './accordion.css'
+import './App.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,9 +32,14 @@ export default function SimpleAccordion() {
                     <Typography className={classes.heading}>Accordion 1</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                    <Typography className="new_row">
+                        <div className="column_left">
+                            <img className="img_border" src={require('./forest_640.jpg')}/>
+                        </div>
+                        <div className="column_right">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                            sit amet blandit leo lobortis eget.
+                        </div>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -46,9 +52,14 @@ export default function SimpleAccordion() {
                     <Typography className={classes.heading}>Accordion 2</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                    <Typography className="new_row">
+                        <div className="column_left">
+                            <img className="img_border" src={require('./forest_640.jpg')}/>
+                        </div>
+                        <div className="column_right">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                            sit amet blandit leo lobortis eget.
+                        </div>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -61,9 +72,14 @@ export default function SimpleAccordion() {
                     <Typography className={classes.heading}>Accordion 3</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                    <Typography className="new_row">
+                        <div className="column_left">
+                            <img className="img_border" src={require('./forest_640.jpg')}/>
+                        </div>
+                        <div className="column_right">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                            sit amet blandit leo lobortis eget.
+                        </div>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
