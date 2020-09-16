@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import SimpleAccordion from "./accordion";
-import SimpleSlider from "./slick";
-import MultipleItems from "./multipleSlick";
+import SimpleAccordion from "./components/accordion";
+import SimpleSlider from "./components/slick";
+import MultipleItems from "./components/multipleSlick";
 import "slick-carousel/slick/slick.css";
-import MyForm from "./form";
-import './multipleSlick.css';
+import MyForm from "./components/form";
+import './components/multipleSlick.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import { Link } from 'react-router';
 
 function App() {
@@ -46,7 +48,7 @@ function App() {
                     <div className="column_left">
                         <div className="clip-border">
                             <div className="clip-circle">
-                                <img className="img_left" src={require('./forest_square.png')}/>
+                                <img className="img_left" src={require('./imgs/forest_square.png')}/>
                             </div>
                         </div>
                     </div>

@@ -14,16 +14,16 @@ export default class SimpleSlider extends Component {
             button: false,
         };
         return (
-            <div>
+            <div className="singleItem">
                 <Slider {...settings}>
-                    <div>
-                        <img src={require('./forest_2400.jpg')} />
+                    <div className="singleItem">
+                        <img src={require('../imgs/forest_2400.jpg')} />
                     </div>
-                    <div>
-                        <img src={require('./forest_2400.jpg')} />
+                    <div className="singleItem">
+                        <img src={require('../imgs/forest_2400.jpg')} />
                     </div>
-                    <div>
-                        <img src={require('./forest_2400.jpg')} />
+                    <div className="singleItem">
+                        <img src={require('../imgs/forest_2400.jpg')} />
                     </div>
                 </Slider>
             </div>

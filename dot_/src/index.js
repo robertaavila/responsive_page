@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-
 class Test extends React.Component {
     render() {
         return <h1>Hello World!</h1>;

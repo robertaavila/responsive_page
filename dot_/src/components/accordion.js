@@ -6,7 +6,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import './accordion.css'
-import './App.css'
+import '../App.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,14 +27,13 @@ export default function SimpleAccordion() {
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1a-content"
-                    id="panel1a-header"
-                >
-                    <Typography className={classes.heading}>Accordion 1</Typography>
+                    id="panel1a-header">
+                    <Typography className={classes.heading}>Lorem ipsum</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography className="new_row">
                         <div className="column_left">
-                            <img className="img_border" src={require('./forest_640.jpg')}/>
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
                         </div>
                         <div className="column_right">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -49,12 +48,32 @@ export default function SimpleAccordion() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography className={classes.heading}>Accordion 2</Typography>
+                    <Typography className={classes.heading}>Lorem ipsum</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography className="new_row">
                         <div className="column_left">
-                            <img className="img_border" src={require('./forest_640.jpg')}/>
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
+                        </div>
+                        <div className="column_right">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                            sit amet blandit leo lobortis eget.
+                        </div>
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2a-content"
+                    id="panel2a-header"
+                >
+                    <Typography className={classes.heading}>Lorem ipsum</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography className="new_row">
+                        <div className="column_left">
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
                         </div>
                         <div className="column_right">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -69,12 +88,12 @@ export default function SimpleAccordion() {
                     aria-controls="panel3a-content"
                     id="panel3a-header"
                 >
-                    <Typography className={classes.heading}>Accordion 3</Typography>
+                    <Typography className={classes.heading}>Lorem ipsum</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography className="new_row">
                         <div className="column_left">
-                            <img className="img_border" src={require('./forest_640.jpg')}/>
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
                         </div>
                         <div className="column_right">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,

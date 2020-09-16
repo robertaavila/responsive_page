@@ -16,12 +16,13 @@
   --footerGray: #2A2B2B;
   --white: #FFFFFF;
   --black: #000000;
-  --title: #3C523A;
+  --title: #2c5328;
 }
 
 .App {
   text-align: center;
   font-family: OpenSans-Bold;
+  overflow-x: hidden;
 }
 
 p {
@@ -100,9 +101,9 @@ h3 {
 }
 
 .box1 {
+  padding: 3vh 4vw;
   background-color: var(--darkGray);
   color: var(--white);
-  padding-bottom: 4vh;
 }
 
 html {
@@ -180,3 +181,8 @@ html {
   font-size: 3vh;
   color: white;
 }
+
+
+
+
+
