@@ -6,7 +6,7 @@ O layout da página deve ser responsivo e deve responder a estas imagens:
 
 <img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/FrontEndDesk.png" height="700px" height="auto"> 
 
-<img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/FrontEndMobile.png?raw=true" heigth="700px" height="auto"> 
+<img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/FrontEndMobile.png?raw=true" height="700px" height="auto"> 
 
 ## Visualização
 
