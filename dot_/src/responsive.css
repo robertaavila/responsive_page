@@ -5,7 +5,7 @@
     }
 
     h2 {
-        font-size: 2.5vw;
+        font-size: 4vw;
         color: var(--white);
         font-family: OpenSans-Regular;
     }
@@ -14,6 +14,9 @@
         font-size: 6vw;
     }
 
+    p{
+        font-size: 4.2vw;
+    }
     .caption_title {
         position: relative;
         background-color: var(--darkGray);
@@ -50,7 +53,7 @@
     }
 
     .column_left {
-        width: 80%;
+        width: 100%;
     }
 
     .column_right {
@@ -76,24 +79,6 @@
         display: grid;
     }
 
-    .carousel-2 {
-        margin-bottom: 10vh;
-    }
-
-    .slick-next, .slick-prev {
-        position: absolute;
-        right: 20%;
-        z-index: 1;
-        top: 103%;
-        height: 15%;
-        width: 15%;
-        margin: 2vh auto;
-    }
-
-    .carousel .slick-slide img {
-        width: 96%;
-        border: 2vw solid var(--mediumGray);
-    }
 
     /*FOOTER*/
     .footer {
@@ -103,6 +88,17 @@
     .font_footer {
         font-size: 4vh;
         padding-top: 1.5vh;;
+    }
+
+
+    #email{
+        width: 100%;
+        text-indent: 7vw;
+    }
+
+    #phone{
+        width: 100%;
+        text-indent: 8vw;
     }
 }
 

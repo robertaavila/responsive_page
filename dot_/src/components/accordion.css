@@ -6,7 +6,7 @@
     display: flex;
 }
 
-.accordion_background{
+.accordion_background {
     background-color: var(--fairGray);
 
 }
@@ -26,7 +26,7 @@
     margin: 0 !important;
 }
 
-.accordion_margin .MuiCollapse-wrapperInner{
+.accordion_margin .MuiCollapse-wrapperInner {
     background-color: var(--white);
     color: var(--black);
 }
@@ -52,5 +52,29 @@
 
 .column_right {
     width: 66.66%;
-   margin-top: 10vh;
+    margin-top: 10vh;
+}
+
+@media (max-width: 768px) {
+    .makeStyles-heading-2 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    .column_left img {
+        width: 96%;
+        height: auto;
+        margin: auto;
+    }
+
+    .column_right {
+        width: 66.66%;
+        margin-top: 3vh;
+    }
+
+    .img_border {
+        border: 10px solid var(--mediumGray);
+        margin: 2vh;
+    }
+
 }

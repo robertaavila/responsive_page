@@ -33,7 +33,7 @@ export default function SimpleAccordion() {
                 <AccordionDetails>
                     <Typography className="new_row">
                         <div className="column_left">
-                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -53,7 +53,7 @@ export default function SimpleAccordion() {
                 <AccordionDetails>
                     <Typography className="new_row">
                         <div className="column_left">
-                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -73,7 +73,7 @@ export default function SimpleAccordion() {
                 <AccordionDetails>
                     <Typography className="new_row">
                         <div className="column_left">
-                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
@@ -93,7 +93,7 @@ export default function SimpleAccordion() {
                 <AccordionDetails>
                     <Typography className="new_row">
                         <div className="column_left">
-                            <img className="img_border" src={require('../imgs/forest_640.jpg')}/>
+                            <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,

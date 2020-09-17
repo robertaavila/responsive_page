@@ -17,13 +17,13 @@ export default class SimpleSlider extends Component {
             <div className="singleItem">
                 <Slider {...settings}>
                     <div className="singleItem">
-                        <img src={require('../imgs/forest_2400.jpg')} />
+                        <img src={require('../imgs/forest_2400.jpg')} alt="forest"/>
                     </div>
                     <div className="singleItem">
-                        <img src={require('../imgs/forest_2400.jpg')} />
+                        <img src={require('../imgs/forest_2400.jpg')} alt="forest"/>
                     </div>
                     <div className="singleItem">
-                        <img src={require('../imgs/forest_2400.jpg')} />
+                        <img src={require('../imgs/forest_2400.jpg')} alt="forest"/>
                     </div>
                 </Slider>
             </div>

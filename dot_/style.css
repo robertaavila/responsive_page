@@ -349,7 +349,7 @@ button.accordion {
 }
 
 #name {
-    padding-left: 10vh;
+    padding-left: 6vw;
 }
 
 #email {
@@ -361,11 +361,11 @@ button.accordion {
 
 #message {
     height: 20vh;
-    padding-left: 15vh;
+    padding-left: 7.5vw;
 }
 
 #phone {
-    text-indent: 6vw;
+    text-indent: 5vw;
     width: 93%;
     margin-bottom: 2vh;
     justify-content: space-between;

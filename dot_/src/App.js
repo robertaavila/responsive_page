@@ -8,7 +8,7 @@ import MyForm from "./components/form";
 import './components/multipleSlick.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { Link } from 'react-router';
+import './responsive.css';
 
 function App() {
     return (
@@ -48,7 +48,7 @@ function App() {
                     <div className="column_left">
                         <div className="clip-border">
                             <div className="clip-circle">
-                                <img className="img_left" src={require('./imgs/forest_square.png')}/>
+                                <img className="img_left" src={require('./imgs/forest_square.png')} alt="forest"/>
                             </div>
                         </div>
                     </div>

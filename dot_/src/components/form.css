@@ -30,8 +30,8 @@
     width: 50%;
 }
 
-.form_space_between{
-    width: 3%;
+.form_space_between {
+    width: 1%;
 }
 
 .form_line {
@@ -42,12 +42,8 @@
     display: flex;
 }
 
-/*.form_half {*/
-/*    justify-content: space-between;*/
-/*}*/
-
 #name {
-    padding-left: 10vh;
+    padding-left: 6vw;
 }
 
 #email {
@@ -59,11 +55,11 @@
 
 #message {
     height: 20vh;
-    padding-left: 15vh;
+    padding-left: 7.5vw;
 }
 
 #phone {
-    text-indent: 6vw;
+    text-indent: 5vw;
     width: 93%;
     margin-bottom: 2vh;
     justify-content: space-between;
@@ -103,6 +99,14 @@ label {
     position: absolute;
 }
 
+.resultValidation {
+    display: block;
+    width: 25%;
+    margin: auto;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
 .tooltip {
     position: relative;
 }
@@ -125,4 +129,30 @@ label {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@media (max-width: 768px) {
+    /*FORMULARIO*/
+    .form_container {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    .form_half {
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    #name {
+        padding-left: 11vw;
+    }
+
+    #email {
+        text-indent: 9vw;
+    }
+
+    #phone {
+        text-indent: 17vw;
+    }
 }
