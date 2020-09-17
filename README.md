@@ -4,9 +4,9 @@ O objetivo deste projeto foi criar duas páginas com o mesmo layout: uma em Reac
 
 O layout da página deve ser responsivo e deve responder a estas imagens: 
 
-<img src="https://github.com/robertaavila/responsive_page/dot_/imgs/FrontEndDesk.png" width="500px" height="auto"> 
+<img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/FrontEndDesk.png" width="500px" height="auto"> 
 
-<img src="https://github.com/robertaavila/responsive_page/dot_/imgs/FrontEndMobile.png" width="500px" height="auto"> 
+<img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/FrontEndMobile.png?raw=true" width="500px" height="auto"> 
 
 ## Visualização
 
