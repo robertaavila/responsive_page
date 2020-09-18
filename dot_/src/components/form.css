@@ -1,0 +1,169 @@
+
+.box4 {
+    position: relative;
+}
+
+.caption_form {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+}
+
+.form_button {
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+    padding: 2vh 3vw;
+    border-radius: 10px;
+    border: 1px solid var(--fairGray);
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+}
+
+.form_container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.form_half {
+    width: 50%;
+}
+
+.form_space_between {
+    width: 1%;
+}
+
+.form_line {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2vh;
+    height: auto;
+    display: flex;
+}
+
+#name {
+    padding-left: 6vw;
+}
+
+#email {
+    text-indent: 4.5vw;
+    width: 93%;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+}
+
+#message {
+    height: 20vh;
+    padding-left: 7.5vw;
+}
+
+#phone {
+    text-indent: 5vw;
+    width: 93%;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    padding-left: 4%;
+}
+
+.input_phone::placeholder {
+    text-indent: 5vw;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: var(--black);
+    -webkit-box-shadow: 0 0 0px 1000px var(--fairGray) inset;
+}
+
+input, textarea {
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--borderGray);
+    border-radius: 4px;
+    background-color: var(--fairGray);
+    font-family: OpenSans-Regular;
+    font-size: 13px;
+}
+
+label {
+    display: flex;
+    font-size: 12px;
+    pointer-events: none;
+    margin-top: 0.3vh;
+}
+
+.label_email .label_phone {
+    position: absolute;
+}
+
+.resultValidation {
+    display: block;
+    width: 25%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-top: 2vh;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    /*FORMULARIO*/
+    .form_container {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    .form_half {
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    #name {
+        padding-left: 15vw;
+    }
+
+    #email {
+        padding-left: 14.5vw;
+        text-indent: 0vw;
+    }
+
+    #phone {
+        padding-left: 19vw;
+        text-indent: 0vw;
+    }
+
+    #message{
+        padding-left: 22.5vw;
+    }
+
+    input, textarea, label, button
+    {
+        font-size:3vw;
+    }
+}

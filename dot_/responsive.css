@@ -1,0 +1,160 @@
+@media (max-width: 768px) {
+    p {
+        margin: 2vh;
+        font-size: 3vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+        color: var(--white);
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        color: var(--white);
+        font-family: OpenSans-Regular;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    .caption_title {
+        position: relative;
+        background-color: var(--darkGray);
+        max-width: 70%;
+        margin: 5vh auto;
+    }
+
+    .caption_svg {
+        position: absolute;
+        left: 45%;
+        z-index: 1;
+        width: 100%;
+        max-width: 10vw;
+        margin-top: 15vh;
+    }
+
+    /*IMAGEM COM CIRCULO*/
+    .row {
+        display: grid;
+        margin: auto;
+        width: 95%;
+        height: auto;
+        padding: 0vh;
+        padding-top: 2vh;
+
+    }
+
+    .clip-circle {
+        clip-path: circle(35vw at center);
+    }
+
+    .clip-border {
+        clip-path: circle(38vw at center);
+    }
+
+    .column_left {
+        width: 80%;
+    }
+
+    .column_right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column_right h3 {
+        font-size: 10vw;
+    }
+
+    .single-item .slick-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*SANFONA*/
+    .box3 {
+        padding-bottom: 2vh;
+    }
+
+    .new_row {
+        display: grid;
+    }
+
+    button.accordion {
+        font-size: 3vw;
+    }
+
+    .carousel-2 {
+        margin-bottom: 10vh;
+    }
+
+    .slick-next, .slick-prev {
+        position: absolute;
+        right: 20%;
+        z-index: 1;
+        top: 103%;
+        height: 15%;
+        width: 15%;
+        margin: 2vh auto;
+    }
+
+    .carousel .slick-slide img {
+        width: 96%;
+        border: 2vw solid var(--mediumGray);
+    }
+
+    /*FORMULARIO*/
+    .form_container {
+        flex-flow: column nowrap;
+        width: 100%;
+    }
+
+    .form_half {
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    #name {
+        padding-left: 11vw;
+    }
+
+    #email {
+        text-indent: 12vw;
+    }
+
+    #phone {
+        text-indent: 16vw;
+    }
+
+    #message{
+        padding-left: 22.5vw;
+    }
+
+    input, textarea, label, button
+    {
+        font-size:3vw;
+    }
+}
+
+/*FOOTER*/
+.footer {
+    height: 8vh;
+}
+
+.font_footer {
+    font-size: 4vh;
+    padding-top: 1.5vh;
+}
+
+
+@media (min-width: 769px) {
+    .form_half {
+        flex: 36vw;
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+}

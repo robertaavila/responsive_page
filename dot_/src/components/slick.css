@@ -1,0 +1,44 @@
+:root {
+    --darkGray: #434343;
+    --mediumGray: #777777;
+    --fairGray: #BFBFBF;
+    --borderGray: #CCCCCC;
+    --footerGray: #2A2B2B;
+    --white: #FFFFFF;
+    --black: #000000;
+    --title: #3C523A;
+}
+
+.singleItem {
+    background-color: var(--darkGray);
+}
+
+.singleItem p {
+    margin: auto 2vw;
+}
+
+.singleItem .slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+    opacity: 1;
+}
+
+.singleItem .slick-dots li.slick-active button:before {
+    opacity: 1;
+    content: url(../imgs/rec.svg);
+    background-color: var(--title);
+    border-radius: 50%;
+    width: 20px;
+    transform: scale(1.4, 1.4);
+}
+
+.singleItem .slick-dots {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 5px;
+    padding: 12px;
+}
+
+.singleItem img {
+    width: 100%;
+    height: 100vh;
+}
