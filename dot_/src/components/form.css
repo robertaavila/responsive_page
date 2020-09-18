@@ -145,14 +145,25 @@ label {
     }
 
     #name {
-        padding-left: 11vw;
+        padding-left: 15vw;
     }
 
     #email {
-        text-indent: 9vw;
+        padding-left: 14.5vw;
+        text-indent: 0vw;
     }
 
     #phone {
-        text-indent: 17vw;
+        padding-left: 19vw;
+        text-indent: 0vw;
+    }
+
+    #message{
+        padding-left: 22.5vw;
+    }
+
+    input, textarea, label, button
+    {
+        font-size:3vw;
     }
 }

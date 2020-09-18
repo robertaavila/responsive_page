@@ -36,8 +36,10 @@ export default function SimpleAccordion() {
                             <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                            sit amet blandit leo lobortis eget.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </p>
                         </div>
                     </Typography>
                 </AccordionDetails>
@@ -56,8 +58,10 @@ export default function SimpleAccordion() {
                             <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                            sit amet blandit leo lobortis eget.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </p>
                         </div>
                     </Typography>
                 </AccordionDetails>
@@ -76,8 +80,10 @@ export default function SimpleAccordion() {
                             <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                            sit amet blandit leo lobortis eget.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </p>
                         </div>
                     </Typography>
                 </AccordionDetails>
@@ -96,8 +102,10 @@ export default function SimpleAccordion() {
                             <img className="img_border" src={require('../imgs/forest_640.jpg')} alt="forest"/>
                         </div>
                         <div className="column_right">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                            sit amet blandit leo lobortis eget.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                                sit amet blandit leo lobortis eget.
+                            </p>
                         </div>
                     </Typography>
                 </AccordionDetails>

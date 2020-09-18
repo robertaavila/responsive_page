@@ -56,9 +56,13 @@
 }
 
 @media (max-width: 768px) {
-    .makeStyles-heading-2 {
-        font-size: 1.8rem;
+    .makeStyles-heading-2 p{
+        font-size: 4vw;
         font-weight: 400;
+    }
+
+    p.MuiTypography-root.makeStyles-heading-2.MuiTypography-body1{
+        font-size: 4vw;
     }
 
     .column_left img {
@@ -76,5 +80,6 @@
         border: 10px solid var(--mediumGray);
         margin: 2vh;
     }
+
 
 }

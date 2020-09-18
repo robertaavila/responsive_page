@@ -81,25 +81,16 @@
 
 
     /*FOOTER*/
-    .footer {
+
+    .footer{
+        padding: 2.5vw;
+    }
+
+    .footer h3 {
         height: 8vh;
-    }
-
-    .font_footer {
         font-size: 4vh;
-        padding-top: 1.5vh;;
     }
 
-
-    #email{
-        width: 100%;
-        text-indent: 7vw;
-    }
-
-    #phone{
-        width: 100%;
-        text-indent: 8vw;
-    }
 }
 
 @media (min-width: 769px) {
