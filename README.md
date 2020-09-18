@@ -2,7 +2,7 @@
 
 O objetivo deste projeto foi criar duas páginas com o mesmo layout: uma em React e outra apenas com HTML, CSS e Javascript Vanilla. 
 
-O layout da página deve ser responsivo e deve responder a estas imagens: 
+O layout da página deve ser responsivo e deve corresponder a estas imagens: 
 
 <img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/FrontEndDesk.png" width="500px" height="auto" align="center" > <img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/FrontEndMobile.png?raw=true" width="auto" height="1193px" align="center"> 
 
@@ -10,7 +10,13 @@ O layout da página deve ser responsivo e deve responder a estas imagens:
 
 O resultado foi o seguinte: 
 
+Versão Vanilla: 
 
+<img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/vanilla_desktop.png" width="500px" height="auto" align="center" > <img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/vanilla_mobile.png?raw=true" width="auto" height="965px" align="center"> 
+
+Versão React:
+
+<img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/react_desktop.png" width="500px" height="auto" align="center" > <img src="https://github.com/robertaavila/responsive_page/blob/dev/dot_/imgs/react_mobile.png?raw=true" width="auto" height="919px" align="center"> 
 
 ## Como rodar a aplicação
 
