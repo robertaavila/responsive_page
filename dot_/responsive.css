@@ -1,4 +1,9 @@
 @media (max-width: 768px) {
+    p {
+        margin: 2vh;
+        font-size: 3vw;
+    }
+
     h1 {
         font-size: 8vw;
         color: var(--white);
@@ -76,6 +81,10 @@
         display: grid;
     }
 
+    button.accordion {
+        font-size: 3vw;
+    }
+
     .carousel-2 {
         margin-bottom: 10vh;
     }
@@ -95,16 +104,50 @@
         border: 2vw solid var(--mediumGray);
     }
 
-    /*FOOTER*/
-    .footer {
-        height: 8vh;
+    /*FORMULARIO*/
+    .form_container {
+        flex-flow: column nowrap;
+        width: 100%;
     }
 
-    .font_footer {
-        font-size: 4vh;
-        padding-top: 1.5vh;;
+    .form_half {
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+
+    #name {
+        padding-left: 11vw;
+    }
+
+    #email {
+        text-indent: 12vw;
+    }
+
+    #phone {
+        text-indent: 16vw;
+    }
+    
+    #message{
+        padding-left: 22.5vw;
+    }
+
+    input, textarea, label, button
+    {
+        font-size:3vw;
     }
 }
+
+/*FOOTER*/
+.footer {
+    height: 8vh;
+}
+
+.font_footer {
+    font-size: 4vh;
+    padding-top: 1.5vh;
+}
+
 
 @media (min-width: 769px) {
     .form_half {
