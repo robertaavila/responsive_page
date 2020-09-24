@@ -19,25 +19,6 @@
     --title: #3C523A;
 }
 
-/*PRIMEIRO CARROSSEL*/
-
-.arrow_path {
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation: arrow_path 6s linear forwards infinite;
-    stroke: var(--white);
-    stroke-width: 30;
-}
-
-@keyframes arrow_path {
-    40% {
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
 body {
     margin: 0;
     overflow-x: hidden;
@@ -45,25 +26,8 @@ body {
     font-family: OpenSans-Bold;
 }
 
-.absolute_div {
-    position: absolute;
-}
-
-.caption_title {
-    position: absolute;
-    text-align: center;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-
-.caption_svg {
-    position: absolute;
-    left: 49%;
-    z-index: 1;
-    width: 100%;
-    max-width: 3vw;
-    margin-top: 30vh;
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -90,48 +54,82 @@ h3 {
 
 }
 
-.font_strong {
-    font-family: OpenSans-Bold;
-}
-
 p {
     font-family: OpenSans-Regular;
     margin: 2vh;
     font-size: 1.2vw;
 }
 
-.relative-div {
+/*PRIMEIRO CARROSSEL - BOX0*/
+
+.box0--arrow_path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: arrow_path 6s linear forwards infinite;
+    stroke: var(--white);
+    stroke-width: 30;
+}
+
+@keyframes arrow_path {
+    40% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.box0--absolute_div {
+    position: absolute;
+}
+
+.box0--caption_title {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.box0--caption_svg {
+    position: absolute;
+    left: 49%;
+    z-index: 1;
+    width: 100%;
+    max-width: 3vw;
+    margin-top: 30vh;
+}
+
+.box0--relative-div {
     position: relative;
 }
 
-#section1 {
+#go_to_box1 {
 }
 
-.slick-active {
+.carousel-1image .slick-active {
     background: var(--title);
     border-radius: 15px;
 }
 
-
-.slick-dots {
+.carousel-1image .slick-dots {
     background: rgba(0, 0, 0, 0.6);
 }
 
-
-.slick-dots li button:before {
+.carousel-1image .slick-dots li button:before {
     font-size: 20px;
 }
 
-.single-item .slick-slide img {
+.carousel-1image .slick-slide img {
     width: 100%;
     height: 100vh;
 }
 
-.slick-slide {
+.carousel-1image .slick-slide {
     background-color: var(--darkGray);
 }
 
-/*SEGUNDO CARROSEL*/
+/*SEGUNDO CARROSEL - BOX1*/
 
 .box1 {
     background-color: var(--darkGray);
@@ -139,29 +137,25 @@ p {
     padding-bottom: 4vh;
 }
 
-.carousel .slick-slide img {
-    width: 100%;
-    border: 4px solid var(--mediumGray);
-}
-
-.carousel .slick-slide {
-    margin: 0 5px;
-    padding: 4px;
-    margin-top: 3vw;
-}
-
-.carousel-2 {
+.box1--carousel3images {
     margin: auto;
     width: 80%;
     text-align: center;
     position: relative;
 }
 
-html {
-    scroll-behavior: smooth;
+.carousel-3images .slick-slide img {
+    width: 100%;
+    border: 4px solid var(--mediumGray);
 }
 
-.slick-arrow {
+.carousel-3images .slick-slide {
+    margin: 0 5px;
+    padding: 4px;
+    margin-top: 3vw;
+}
+
+.carousel-3images .slick-arrow {
     animation-duration: 4s;
     animation-name: blink;
     animation-iteration-count: infinite;
@@ -180,8 +174,7 @@ html {
     }
 }
 
-
-/*IMAGEM COM BORDA CIRCULAR CINZA*/
+/*IMAGEM COM BORDA CIRCULAR CINZA - BOX2*/
 
 .box2 {
     background-color: var(--mediumGray);
@@ -189,36 +182,40 @@ html {
     margin: 0px;
 }
 
-.clip-circle {
+.box2--font_strong {
+    font-family: OpenSans-Bold;
+}
+
+.box2--clip-circle {
     clip-path: circle(10vw at center);
     position: relative;
 }
 
-.clip-border {
+.box2--clip-border {
     clip-path: circle(11vw at center);
     background-color: var(--footerGray);
 }
 
-.column_left {
+.box2--column_left {
     width: 33.33%;
     margin: auto;
 }
 
-.column_left img {
+.box2--column_left img {
     width: 100%;
     height: auto;
 }
 
-.column_right {
+.box2--column_right {
     width: 66.66%;
 }
 
-.img_border {
+.box2--img_border {
     border: 4px solid var(--mediumGray);
     margin-bottom: 2vh;
 }
 
-.row {
+.box2--row {
     display: flex;
     margin: auto;
     width: 80%;
@@ -226,7 +223,7 @@ html {
     padding: 3vw 5vw;
 }
 
-/*SANFONA*/
+/*SANFONA - BOX3*/
 
 .accordion {
     background-color: var(--mediumGray);
@@ -241,11 +238,6 @@ html {
     transition: 0.4s;
 }
 
-.new_row .column_right {
-    align-self: center;
-    margin: 1vh;
-}
-
 .accordion:after {
     content: '\2193';
     color: var(--white);
@@ -254,7 +246,6 @@ html {
     margin-left: 5px;
 }
 
-
 .active, .accordion:hover {
     background-color: var(--white);
     color: var(--mediumGray);
@@ -262,20 +253,52 @@ html {
     content: '\2193';
 }
 
-.border_bottom {
+.box3--new_row .box3--column_right {
+    align-self: center;
+    margin: 1vh;
+}
+
+.box3--border_bottom {
     border-radius: 0 0 5px 5px;
 }
 
-.border_bottom.active {
+.box3--border_bottom.active {
     border-radius: 0px;
 }
 
-.border_top {
+.box3--border_top {
     border-radius: 5px 5px 0 0;
+}
+
+.box3--column_left {
+    width: 33.33%;
+    margin: auto;
+}
+
+.box3--column_left img {
+    width: 100%;
+    height: auto;
+}
+
+.box3--column_right {
+    width: 66.66%;
+}
+
+.box3--img_border {
+    border: 4px solid var(--mediumGray);
+    margin-bottom: 2vh;
 }
 
 .box3 {
     background-color: var(--fairGray);
+}
+
+.box3--row {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 3vw 5vw;
 }
 
 button.active:after {
@@ -302,18 +325,25 @@ button.accordion {
     color: var(--mediumGray);
 }
 
-.new_row {
+.box3--new_row {
     display: flex;
     margin: auto;
 }
 
-/*FORMULARIO*/
+/*FORMULARIO - BOX4*/
 
 .box4 {
     position: relative;
 }
 
-.caption_form {
+.box4__triangle {
+    padding: 2vh 0vw;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, var(--mediumGray) 0%, var(--mediumGray) 50%, var(--darkGray) 50%, var(--darkGray) 100%);
+}
+
+.form_caption {
     position: absolute;
     width: 100%;
     padding: 12px;
@@ -349,7 +379,7 @@ button.accordion {
 }
 
 #name {
-    padding-left: 6vw;
+    padding-left: 5.5vw;
 }
 
 #email {
@@ -429,14 +459,7 @@ label {
     visibility: visible;
 }
 
-.triangle {
-    padding: 2vh 0vw;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, var(--mediumGray) 0%, var(--mediumGray) 50%, var(--darkGray) 50%, var(--darkGray) 100%);
-}
-
-/*FOOTER*/
+/*FOOTER - BOX5*/
 
 .footer {
     background-color: var(--footerGray);
