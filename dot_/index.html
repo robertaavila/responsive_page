@@ -22,8 +22,22 @@
     });
 </script>
 <script>
+
     $(document).ready(function () {
-        $('.carousel').slick({
+        $('.carousel-1image').slick({
+            slidesToShow: 1,
+            dots: true,
+            infinite: false,
+            slidesToScroll: 1,
+            speed: 500,
+            cssEase: 'linear',
+            margin: 0,
+            arrows: false,
+        });
+    });
+
+    $(document).ready(function () {
+        $('.carousel-3images').slick({
             dots: false,
             infinite: true,
             speed: 300,
@@ -49,32 +63,21 @@
         });
     });
 
-    $(document).ready(function () {
-        $('.single-item').slick({
-            slidesToShow: 1,
-            dots: true,
-            infinite: false,
-            slidesToScroll: 1,
-            speed: 500,
-            cssEase: 'linear',
-            margin: 0,
-            arrows: false,
-        });
-    });
 
 </script>
 <body>
-<div class="relative-div">
-    <div class="caption_title">
-        <h1>LOREM IPSUM</h1>
-        <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-    </div>
-    <div class="caption_svg">
-        <a href="#section1" id="svg_arrow">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
-                 x="0px" y="0px"
-                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<div class="box0">
+    <div class="box0--relative-div">
+        <div class="box0--caption_title">
+            <h1>LOREM IPSUM</h1>
+            <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
+        </div>
+        <div class="box0--caption_svg">
+            <a href="#go_to_box1" id="box0--svg_arrow">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px"
+                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                 <g>
                     <g>
                         <path class="arrow_path" d="M441.156,322.876l-48.666-47.386c-3.319-3.243-8.619-3.234-11.93,0.017l-81.894,80.299V8.533
@@ -85,27 +88,27 @@
                     </g>
                 </g>
             </svg>
-        </a>
+            </a>
+        </div>
+    </div>
+
+    <div class="carousel-1image">
+        <div class="carousel-item">
+            <img src="./imgs/forest_2400.jpg" class="img-responsive">
+        </div>
+        <div>
+            <img src="./imgs/forest_2400.jpg" class="img-responsive">
+        </div>
+        <div>
+            <img src="./imgs/forest_2400.jpg" class="img-responsive">
+        </div>
     </div>
 </div>
-
-<div class="single-item">
-    <div class="carousel-item">
-        <img src="./imgs/forest_2400.jpg" class="img-responsive">
-    </div>
-    <div>
-        <img src="./imgs/forest_2400.jpg" class="img-responsive">
-    </div>
-    <div>
-        <img src="./imgs/forest_2400.jpg" class="img-responsive">
-    </div>
-</div>
-
 <div class="box1">
-    <div class="carousel-2">
-        <div class="carousel" id="section1">
+    <div class="box1--carousel3images">
+        <div class="carousel-3images" id="go_to_box1">
             <div>
-                <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
+                <img src="./imgs/forest_640.jpg" class="img-responsive">
                 <h3>LOREM IPSUM</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum laoreet tempor. Morbi
                     consectetur at nisi eget gravida. Curabitur nibh tellus, fermentum rutrum vulputate id, tristique in
@@ -171,20 +174,20 @@
     </div>
 </div>
 <div class="box2">
-    <div class="row">
-        <div class="column_left">
-            <div class="clip-border">
-                <div class="clip-circle">
-                    <img src="imgs/forest_square.png" class="img-responsive img_left">
+    <div class="box2--row">
+        <div class="box2--column_left">
+            <div class="box2--clip-border">
+                <div class="box2--clip-circle">
+                    <img src="imgs/forest_square.png" class="img-responsive">
                 </div>
             </div>
         </div>
-        <div class="column_right">
+        <div class="box2--column_right">
             <h3>LOREM IPSUM</h3>
             <p>Pellentesque sit amet libero nulla. Proin pellentesque leo sed ante efficitur efficitur. Curabitur vel
                 semper purus, et ullamcorper tellus. Vivamus egestas, nibh vel elementum vehicula, risus lorem tempus
                 nunc. Duis imperdiet viverra iaculis.</p>
-            <p class="font_strong"> Duis imperdiet viverra iaculis. Nam eu aliquet ante, ut laoreet nisl. Donec non
+            <p class="box2--font_strong"> Duis imperdiet viverra iaculis. Nam eu aliquet ante, ut laoreet nisl. Donec non
                 iaculis sem, nec posuere
                 erat. Proin sapien lectus, maximus nec molestie in, hendrerit eget nunc. Integer mattis non purus quis
                 cursus. Duis imperdiet viverra iaculis.</p>
@@ -198,15 +201,15 @@
     </div>
 </div>
 <div class="box3">
-    <div class="row">
+    <div class="box3--row">
         <div class="container-accordion">
-            <button class="accordion border_top">Lorem ipsum</button>
+            <button class="accordion box3--border_top">Lorem ipsum</button>
             <div class="panel">
-                <div class="new_row">
-                    <div class="column_left">
-                        <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
+                <div class="box3--new_row">
+                    <div class="box3--column_left">
+                        <img src="./imgs/forest_640.jpg" class="img-responsive box3--img_border">
                     </div>
-                    <div class="column_right">
+                    <div class="box3--column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -215,38 +218,37 @@
             </div>
             <button class="accordion">Lorem ipsum</button>
             <div class="panel">
-                <div class="new_row">
-                    <div class="column_left">
-                        <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
+                <div class="box3--new_row">
+                    <div class="box3--column_left">
+                        <img src="./imgs/forest_640.jpg" class="img-responsive box3--img_border">
                     </div>
-                    <div class="column_right">
+                    <div class="box3--column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
-
             <button class="accordion">Lorem ipsum</button>
             <div class="panel">
-                <div class="new_row">
-                    <div class="column_left">
-                        <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
+                <div class="box3--new_row">
+                    <div class="box3--column_left">
+                        <img src="./imgs/forest_640.jpg" class="img-responsive box3--img_border">
                     </div>
-                    <div class="column_right">
+                    <div class="box3--column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
-            <button class="accordion border_bottom">Lorem ipsum</button>
-            <div class="panel border_bottom">
-                <div class="new_row">
-                    <div class="column_left">
-                        <img src="./imgs/forest_640.jpg" class="img-responsive img_border">
+            <button class="accordion box3--border_bottom">Lorem ipsum</button>
+            <div class="panel">
+                <div class="box3--new_row">
+                    <div class="box3--column_left">
+                        <img src="./imgs/forest_640.jpg" class="img-responsive box3--img_border">
                     </div>
-                    <div class="column_right">
+                    <div class="box3--column_right">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -256,28 +258,30 @@
         </div>
     </div>
 </div>
-<div class="triangle">
+<div class="box4__triangle">
     <div class="box4">
         <form name="form">
             <div class="form_line">
-                <label class="caption_form" for="name">*Nome: </label>
+                <label class="form_caption" for="name">*Nome: </label>
                 <input id="name" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seu nome" required>
             </div>
             <div class="form_container">
                 <div class="form_half">
-                    <label for="email" class="caption_form label_email">*Email: </label>
+                    <label for="email" class="form_caption label_email">*Email: </label>
                     <input id="email" type="email" placeholder="Informe seu e-mail"
                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
                 <div class="form_half tooltip">
-                    <label class="caption_form label_phone" for="phone">*Telefone:
-                        <span class="tooltiptext">O telefone deve ter DDD: (  )_____-____</span></label>
+                    <label class="form_caption label_phone" for="phone">*Telefone:
+                        <span class="tooltiptext">O telefone deve ter DDD e deve ser composto apenas por n&uacute;meros.
+                        </span>
+                    </label>
                     <input id="phone" type="text" placeholder="(  )_____-____"
-                           pattern="(+[0-9]+){2}[0-9]{5}+-[0-9]{4}" required>
+                           required pattern="[0-9]{11}">
                 </div>
             </div>
             <div class="form_line">
-                <label class="caption_form label_message" for="message">*Mensagem: </label>
+                <label class="form_caption label_message" for="message">*Mensagem: </label>
                 <textarea id="message" type="message" placeholder="Escreva aqui" required></textarea>
             </div>
             <button class="form_button" onclick="">Enviar</button>
