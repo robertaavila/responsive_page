@@ -28,7 +28,9 @@ export default class MultipleItems extends Component {
                 },
             ]
         };
+
         return (
+
             <div className="multipleItens">
                 <Slider {...settings}>
                     <div className="multipleItens">

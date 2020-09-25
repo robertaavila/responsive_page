@@ -135,33 +135,6 @@ html {
   margin: 0px;
 }
 
-.clip-circle {
-  clip-path: circle(10vw at center);
-  position: relative;
-}
-
-.clip-border {
-  clip-path: circle(11vw at center);
-  background-color: var(--footerGray);
-}
-
-.img_border {
-  border: 4px solid var(--mediumGray);
-  margin: 2vh;
-}
-
-.row {
-  display: flex;
-  margin: auto;
-  width: 80%;
-  height: auto;
-  padding: 3vw 5vw;
-}
-
-.font_strong {
-  font-family: OpenSans-Bold;
-}
-
 .triangle {
   padding: 2vh 0vw;
   width: 100%;

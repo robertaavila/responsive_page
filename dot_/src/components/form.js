@@ -126,8 +126,8 @@ class MyForm extends React.Component {
         return (
             <>
                 <div style={{display: successFormDisplay}}>
-                    <h1 style={{textAlign: "center"}}>Successo!</h1>
-                    <p style={{textAlign: "center"}}>
+                    <h1 style={{textAlign: "center", color: "white"}}>Sucesso!</h1>
+                    <p style={{textAlign: "center", color: "white"}}>
                         Formulário enviado.
                     </p>
                 </div>
@@ -138,18 +138,18 @@ class MyForm extends React.Component {
                         noValidate
                     >
                         <div className="form_line">
-                            <label className="caption_form" htmlFor="name">*Nome: </label>
+                            <label className="form_caption" htmlFor="name">*Nome: </label>
                             <input id="name" type="text" name="name" placeholder="Nome" required/>
                             <br/>
                         </div>
                         <div className="form_container">
                             <div className="form_half">
-                                <label htmlFor="email" className="caption_form label_email">*Email: </label>
+                                <label htmlFor="email" className="form_caption label_email">*Email: </label>
                                 <input id="email" type="email" name="email" placeholder="E-mail" required/>
                             </div>
                             <div className="form_space_between"></div>
                             <div className="form_half tooltip">
-                                <label className="caption_form label_phone" htmlFor="phone">
+                                <label className="form_caption label_phone" htmlFor="phone">
                                     *Telefone:
                                     <span className="tooltiptext">O telefone deve ter DDD: (  )_____-____</span></label>
                                 <input
@@ -161,7 +161,7 @@ class MyForm extends React.Component {
                             </div>
                         </div>
                         <div className="form_line">
-                            <label className="caption_form label_message" htmlFor="message">*Mensagem: </label>
+                            <label className="form_caption label_message" htmlFor="message">*Mensagem: </label>
                             <textarea
                                 id="message"
                                 type="text"
